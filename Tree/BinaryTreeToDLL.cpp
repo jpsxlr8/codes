@@ -1,16 +1,16 @@
 
-struct Node
-{
-    int data;
-    struct Node* left;
-    struct Node* right;
+// struct Node
+// {
+//     int data;
+//     struct Node* left;
+//     struct Node* right;
     
-    Node(int x){
-        data = x;
-        left = right = NULL;
-    }
-};
- */
+//     Node(int x){
+//         data = x;
+//         left = right = NULL;
+//     }
+// };
+ 
 
 // This function should return head to the DLL
 class Solution
