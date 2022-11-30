@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-using namesoace std;
+using namespace std;
 
 int height[50];
 int size = -1;
