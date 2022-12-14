@@ -3,22 +3,20 @@
 // Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
 
 
-
-
-
 class Solution {
 public:
     int rob(vector<int>& nums) {
         int n=nums.size();
-        vector<int>dp(n+1);
-        dp[0]=0;
-        dp[1]=nums[0];
-        dp[2]=max(nums[0],nums[1]);
+        if(nums.size()==1)return nums[0];
+        vector<int>dp(n);
+        dp[0]=nums[0];
+        dp[1]=max(nums[0],nums[1]);
+       
         
-        for(int i=2;i<=n;i++)
+        for(int i=2;i<n;i++)
         {
-            dp[i]=max(dp[i],dp[i-1]+nums[i]);
+            dp[i]=max(dp[i-1],dp[i-2]+nums[i]);
         }
-        return dp[n];
+        return dp[n-1];
     }
 };
