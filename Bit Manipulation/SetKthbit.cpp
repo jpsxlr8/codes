@@ -1,11 +1,13 @@
 class Solution
 {
-    public:
-    // Function to check if Kth bit is set or not.
-    bool checkKthBit(int n, int k)
+public:
+    int setKthBit(int N, int K)
     {
-        if((n&(1<<k))!=0)
-          return true;
-        return false;
+       // we've to the kth bit means if kth bit is unset we have to set it
+       // if the kth bit is set we've to leave it
+       // we can think of OR operator since it gives value 1 with both 0 and 1 input
+       return N|(1<<K);
+       
     }
+    
 };
