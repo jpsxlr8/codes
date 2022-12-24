@@ -5,27 +5,20 @@
 // Given the array points, return the minimum number of arrows that must be shot to burst all balloons.
 
 
-
-
-
-
-
+bool cmp(vector<int>&a,vector<int>&b){return a[1]<b[1];}
 class Solution {
 public: 
-    bool cmp(vector<int>&a,vector<int>&b){
-        return a[1]<b[1];
-    }
+    
     int findMinArrowShots(vector<vector<int>>& points) {
         sort(points.begin(),points.begin(),cmp);
         int arrows=0; // to count the arrows reqd
         int end_point=0; // variable to maintain curr end point
         for(int i=0;i<points.size();i++){
-            if(i==0 || points[i][0]>end_point){ // if the starting pt of next interval is greater than end point of previous interval then we'll increment arrows 
+            if(arrows==0 || points[i][0]>end_point){ // if the starting pt of next interval is greater than end point of previous interval then we'll increment arrows 
                 arrows++;
                 end_point=points[i][1]; // update end point when 
             }
         }
-        
-    }
     return arrows;
+   }
 };
