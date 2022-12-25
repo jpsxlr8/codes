@@ -1,4 +1,6 @@
+// Given a 2D binary matrix A(0-based index) of dimensions NxM. Find the minimum number of steps required to reach from (0,0) to (X, Y).
 
+// N--> rows M--->columns
 class Solution {
   public:
     int shortestDistance(int N, int M, vector<vector<int>> A, int X, int Y) {
@@ -37,7 +39,7 @@ class Solution {
                } 
             }
         }
-        return -1;
+        return -1; // not possible to reach the destination from (0,0).
        
     }
 };
