@@ -59,7 +59,7 @@ void shiftdown(int i)
 	}
 }
 
-//fuction to indert a new ele in binary heap
+//fuction to insert a new ele in binary heap
 void insert(int p)
 {
 	size = size + 1;
