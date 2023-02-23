@@ -3,7 +3,7 @@ struct Node
 {
     int data;
     Node* left, * right;
-}; */
+}; 
 
 class Solution {
 public:
