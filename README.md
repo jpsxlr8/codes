@@ -1,2 +1,2 @@
-## Coding_Solutions
-It contains the frquently asked DSA problems.
+## DSA
+It contains the frequently asked DSA problems.
