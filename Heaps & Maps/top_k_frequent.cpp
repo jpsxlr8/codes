@@ -15,23 +15,13 @@ int main()
   }
   priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>>pq;
   for(auto it:freq) pq.push({it.second,it.first});
-       /* priority_queue<pair<int,int>>pq;
-        for(auto it:freq) pq.push({it.second,it.first});*/
         
-  vector<int>res;
-     /*   vector<int>res1;*/
-        /*while(k/2--){
-            res1.push_back(pq.top().second);
-            pq.pop();
-        }*/
+   vector<int>res;
    while(k--){
       res.push_back(pq.top().second);
       pq.pop();
    }
         
-       /* for(int i=0;i<res1.size();i++){
-            cout<<res1[i]<<" ";
-        }*/
     for(int i=0;i<res.size();i++){
        cout<<res[i]<<" ";
     }
