@@ -5,7 +5,6 @@ typedef long long ll;
 
 // TC: O(sqrt(n))
 
-///////////////////// start yanking ////////////////////
 bool is_prime(ll n) {
     if (n <= 1) return false;
     if (n <= 3) return true;
@@ -14,7 +13,6 @@ bool is_prime(ll n) {
         if (n%i == 0 || n%(i+2) == 0) return false;
     return true;
 }
-///////////////////// stop yanking /////////////////////
 
 int main() {
     ll n;
