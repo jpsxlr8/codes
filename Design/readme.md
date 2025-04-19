@@ -1,4 +1,4 @@
-*Some famous Sys design interview problems*
+*Some famous System design interview problems*
 
 
 
